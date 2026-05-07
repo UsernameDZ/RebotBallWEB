@@ -1,0 +1,25 @@
+body {
+    background: #020024;
+    background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgb(41, 40, 41) 59%, rgb(29, 28, 29) 80%, rgb(83, 81, 83) 100%);
+
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+
+    height: 100%;
+
+    padding: 10%;
+}
+
+h1 {
+    font-size: 1000%;
+}
+
+p {
+    font-size: 200%;
+}
