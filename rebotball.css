@@ -1,9 +1,12 @@
 body {
-    background: #020024;
-    background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgb(41, 40, 41) 59%, rgb(29, 28, 29) 80%, rgb(83, 81, 83) 100%);
+    background: #000000;
+    background: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(43, 43, 43, 1) 52%, rgba(69, 69, 69, 1) 69%, rgba(87, 87, 87, 1) 98%, rgba(87, 87, 87, 1) 99%, rgba(97, 97, 97, 1) 100%);
+    background: -moz-linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(43, 43, 43, 1) 52%, rgba(69, 69, 69, 1) 69%, rgba(87, 87, 87, 1) 98%, rgba(87, 87, 87, 1) 99%, rgba(97, 97, 97, 1) 100%);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(43, 43, 43, 1) 52%, rgba(69, 69, 69, 1) 69%, rgba(87, 87, 87, 1) 98%, rgba(87, 87, 87, 1) 99%, rgba(97, 97, 97, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#616161", GradientType=0);
 
-    font-family: Arial, sans-serif;
-    color: #ffffff;
+    font-family: Helvetica, sans-serif;
+    color: #e9eff7;
 
     flex-direction: column;
     align-items: center;
@@ -13,13 +16,66 @@ body {
 
     height: 100%;
 
-    padding: 10%;
+    padding: 5%;
 }
 
-h1 {
-    font-size: 1000%;
+#title {
+    font-size: 10vh;
+    font-weight: bolder;
+}
+
+#description {
+    font-size: 4vh;
 }
 
 p {
-    font-size: 200%;
+    font-size: 4vh
 }
+
+#slides {
+    width: 100%;
+    height: 12cm;
+}
+
+#docs {
+    width: 16cm;
+    height: 15cm;
+}
+
+@media (max-width: 600px) {
+    #slides {
+        width: 100%;
+        height: 8cm;
+    }
+
+    #docs {
+        width: 12cm;
+        height: 10cm; 
+    }
+
+    p {
+        font-size: 3.5vh
+    }
+}
+
+@media (min-width: 1000px) {
+    #slides {
+        width: 100%;
+        height: 14cm;
+    }
+
+    #docs {
+        width: 20cm;
+        height: 15cm;
+    }
+
+    #description {
+        font-size: 5vh;
+    }
+
+    p {
+        font-size: 5vh
+    }
+}
+
+
